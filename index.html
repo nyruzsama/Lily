@@ -1024,6 +1024,15 @@ document.getElementById('newsletterForm')?.addEventListener('submit',function(e)
   }
 });
 
+// REDIRECT ALL BUTTONS/LINKS TO GUMROAD
+document.addEventListener('click', function(e) {
+  const target = e.target.closest('a, button');
+  if (target) {
+    e.preventDefault();
+    window.location.href = 'https://jezzrael.gumroad.com/l/zodhxq';
+  }
+});
+
 // SMOOTH SCROLL for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',function(e){
